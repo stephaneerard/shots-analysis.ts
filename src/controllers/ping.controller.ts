@@ -53,5 +53,5 @@ export class PingController {
 }
 
 async function greetin(): Promise<string> {
-    return 'Hello from LoopBack @' + (new Date()).toISOString() + " " + (new Date()).toISOString() + (new Date()).toISOString() ;
+    return 'Hello from LoopBack @' + (new Date()).toISOString() + " " + (new Date()).toISOString() + (new Date()).toISOString();
 }

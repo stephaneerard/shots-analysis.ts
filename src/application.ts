@@ -15,7 +15,7 @@ export class ShotsAnalysisLb4Application extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
-    super(options);
+    super(options)
 
     // Set up the custom sequence
     this.sequence(MySequence);
