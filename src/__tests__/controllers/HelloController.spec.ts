@@ -5,6 +5,7 @@ import {setupApplication} from './test-helper';
 import {ShotsAnalysisLb4Application} from "../../application";
 import {Client} from "@loopback/testlab";
 import {createConnection, getManager} from "typeorm";
+import * as Model from "./../../models"
 
 describe('HelloController (unit)', () => {
     let app: ShotsAnalysisLb4Application;
@@ -26,7 +27,7 @@ describe('HelloController (unit)', () => {
     });
 
     it('retrieve company', async () => {
-        const data = await getManager().getRepository('Company').createQueryBuilder('c').leftJoin('WorksInCountriesWithinPeriod', 'countries').getMany()
+        const data = await getManager().getRepository(Model.Country).createQueryBuilder('c').getMany()
 
         console.log(data)
     });
