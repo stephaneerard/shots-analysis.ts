@@ -1,0 +1,17 @@
+{
+  "imports": [
+    "config_%env%.json"
+  ],
+  "$": {
+    "app": {
+      "name": "Shots Analysis",
+      "fqdn": {
+        "string": "%fqdn.protocol%://%fqdn.domain%.%fqdn.tld%:%fqdn.port%",
+        "tdl": "dev",
+        "protocol": "http",
+        "port": "80",
+        "domain": "localhost"
+      }
+    }
+  }
+}

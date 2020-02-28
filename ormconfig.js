@@ -1,0 +1,8 @@
+module.exports = {
+    "type": "sqlite",
+    "database": "./db.sqlite3",
+    "entities": [
+        "src/models/*.ts"
+    ],
+    "synchronize": true
+}
